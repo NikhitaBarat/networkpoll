@@ -1,4 +1,4 @@
-const VoterContract = artifacts.require("SimpleStorage");
+const VoterContract = artifacts.require("VoterContract");
 
 module.exports = function (deployer) {
     deployer.deploy(VoterContract);

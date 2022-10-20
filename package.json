@@ -1,0 +1,28 @@
+{
+  "name": "networkpoll",
+  "version": "1.0.0",
+  "description": "NetworkPoll is Ethereum network based E2E secure voting system using Cloud and Blockchain to maintain voter confidentiality.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhantprateek/networkpoll.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhantprateek/networkpoll/issues"
+  },
+  "homepage": "https://github.com/siddhantprateek/networkpoll#readme",
+  "devDependencies": {
+    "@maticnetwork/maticjs": "^3.5.0",
+    "@truffle/hdwallet-provider": "^2.1.0",
+    "dotenv": "^16.0.3"
+  }
+}
