@@ -1,0 +1,122 @@
+{
+  "contractName": "VoterContract",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/VoterContract.sol\":\"VoterContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/VoterContract.sol\":{\"keccak256\":\"0x6e03e23afb80ac2a5e5349b972ca49ca61eb83dfc61bd0ef917bf1287f6e0a7e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c61dfaa7fb7f35b366e2993ba5b78e2d728619786988f43bd7604f763ed2414f\",\"dweb:/ipfs/QmVq3R91BrGB5n5A2Lu1sirv5smNHdNePnR6irgVDRAQaL\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200129270ca37e1886bd9ccd64d4ea26f1f55e393317a0f5ce1faaa8951dd4b13a64736f6c634300080f0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212200129270ca37e1886bd9ccd64d4ea26f1f55e393317a0f5ce1faaa8951dd4b13a64736f6c634300080f0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "58:145:1:-:0;;;182:19;;;;;;;;;;58:145;;;;;;",
+  "deployedSourceMap": "58:145:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.15;\n\ncontract VoterContract {\n\n  // mapping with voter id and public key\n  // mapping with voteer id and voter's address\n  // \n  constructor() {\n  }\n}\n",
+  "sourcePath": "D:\\Projects\\networkpoll\\contracts\\VoterContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/VoterContract.sol",
+    "exportedSymbols": {
+      "VoterContract": [
+        39
+      ]
+    },
+    "id": 40,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".15"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "VoterContract",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "VoterContract",
+        "nameLocation": "67:13:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 37,
+              "nodeType": "Block",
+              "src": "196:5:1",
+              "statements": []
+            },
+            "id": 38,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:2:1"
+            },
+            "returnParameters": {
+              "id": 36,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "196:0:1"
+            },
+            "scope": 39,
+            "src": "182:19:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 40,
+        "src": "58:145:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:172:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xCB783eff446De418fD2E895C882e64CaB0a6fd29",
+      "transactionHash": "0x4beb717d0e27ee1d048db1cb2a346e30967310e2ec412fdcd48a53929f40d716"
+    }
+  },
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-10-20T16:59:15.246Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
