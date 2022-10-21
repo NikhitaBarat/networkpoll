@@ -56,3 +56,7 @@ buck-out/
 .expo/
 web-build/
 dist/
+
+# Python
+.venv
+__pycache__
