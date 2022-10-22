@@ -1,0 +1,41 @@
+import React from 'react';
+import { BJP, CONGRESS } from '../icons';
+import './candidatecard.styles.css';
+
+
+const PartiesData = [
+  {
+    name: "BJP",
+    logo: BJP,
+  },
+  {
+    name: "CONGRESS",
+    logo: CONGRESS
+  }
+]
+
+const Candidatecard = () => {
+  
+  return (
+    <div className='candidate-cards'>
+      <div className=''>
+        {
+          PartiesData.map((pdata) => 
+          (
+            <div className='parties-box'>
+              <div className='box-left'>
+                <img className='plogo' src={pdata.logo} alt="" />
+                <h2 className='pname'>{pdata.name}</h2>
+              </div>
+              <div className='box-right'>
+                <button>Vote</button>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Candidatecard
