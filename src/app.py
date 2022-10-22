@@ -1,10 +1,10 @@
 from flask import Flask
 # from modules import keys
+from modules.key_generator import aliceSharedKey, bobSharedKey, compress
 app = Flask(__name__)
 
-# error point
-# datas = {'var1' : str(keys.aliceSharedKey),'var2'  : str(keys.bobSharedKey),}
-datas = {'var1' : 'Key1','var2'  : 'Key2',}
+datas = {'sharedkey_1' : str(compress(aliceSharedKey)),'sharedkey_2'  : str(compress(bobSharedKey)),}
+
 
 @app.route("/")
 def home():

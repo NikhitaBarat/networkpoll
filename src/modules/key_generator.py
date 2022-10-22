@@ -6,6 +6,8 @@ def compress(pubKey):
 
 curve = registry.get_curve('brainpoolP256r1')
 
+print("***************************************************")
+print()
 alicePrivKey = secrets.randbelow(curve.field.n)
 alicePubKey = alicePrivKey * curve.g
 print("Alice public key:", compress(alicePubKey))
@@ -23,3 +25,5 @@ bobSharedKey = bobPrivKey * alicePubKey
 print("Bob shared key:", compress(bobSharedKey))
 
 print("Equal shared keys:", aliceSharedKey == bobSharedKey)
+print()
+print("***************************************************")
