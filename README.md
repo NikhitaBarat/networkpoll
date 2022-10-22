@@ -1,4 +1,10 @@
-# NetworkPoll
+
+<div align="center">
+
+<h1>NetworkPoll</h1>
+
+</div>
+
 NetworkPoll is Ethereum network based E2E secure voting system using Cloud and Blockchain to maintain voter confidentiality.
 
 ![](/assets/architecture/NEPOLL_ARCH.png)
