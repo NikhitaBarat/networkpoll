@@ -10,35 +10,35 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
     },
     //polygon Infura mainnet
-    // polygon_infura_mainnet: {
-    //   provider: () => new HDWalletProvider({
-    //     mnemonic: {
-    //       phrase: mnemonic
-    //     },
-    //     providerOrUrl:
-    //      "https://polygon-mainnet.infura.io/v3/" + infuraProjectId
-    //   }),
-    //   network_id: 137,
-    //   confirmations: 2,
-    //   timeoutBlocks: 200,
-    //   skipDryRun: true,
-    //   chainId: 137
-    // },
-    // //polygon Infura testnet
-    // polygon_infura_testnet: {
-    //   provider: () => new HDWalletProvider({
-    //     mnemonic: {
-    //       phrase: mnemonic
-    //     },
-    //     providerOrUrl:
-    //      "https://polygon-mumbai.infura.io/v3/" + infuraProjectId
-    //   }),
-    //   network_id: 80001,
-    //   confirmations: 2,
-    //   timeoutBlocks: 200,
-    //   skipDryRun: true,
-    //   chainId: 80001
-    // }
+    polygon_infura_mainnet: {
+      provider: () => new HDWalletProvider({
+        mnemonic: {
+          phrase: mnemonic
+        },
+        providerOrUrl:
+         "https://polygon-mainnet.infura.io/v3/" + infuraProjectId
+      }),
+      network_id: 137,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      chainId: 137
+    },
+    //polygon Infura testnet
+    polygon_infura_testnet: {
+      provider: () => new HDWalletProvider({
+        mnemonic: {
+          phrase: mnemonic
+        },
+        providerOrUrl:
+         "https://polygon-mumbai.infura.io/v3/" + infuraProjectId
+      }),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      chainId: 80001
+    }
   },
   
   // mocha: {
@@ -49,7 +49,7 @@ module.exports = {
   compilers: {
     solc: {
       version: "0.8.15",    
-      // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+      // docker: true,   
       settings: {          
        optimizer: {
          enabled: false,
