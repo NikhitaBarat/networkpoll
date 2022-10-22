@@ -60,3 +60,6 @@ dist/
 # Python
 .venv
 __pycache__
+
+# Editor
+.vscode
