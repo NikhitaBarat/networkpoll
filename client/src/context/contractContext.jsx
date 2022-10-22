@@ -1,7 +1,7 @@
 import React from "react";
-import { _web3Instance, _getLocalProvider } from "./web3Context";
+import {_web3Instance, _getLocalProvider} from "./web3Context";
 import truffleContract from "@truffle/contract";
-import constractABI from "../../../build/contracts/VoterContract.json";
+import constractABI from "../contracts/VoterContract.json";
 
 const instance = truffleContract(constractABI);
 // If _web3Instance is undefined, fallback to local network
