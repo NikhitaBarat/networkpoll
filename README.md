@@ -28,3 +28,10 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 | `client/src`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
 | `client/src/components`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
 | `mobile/components`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
+
+
+## Endpoints
+
+| Endpoint | Description |
+| -------- | -------- |
+| `/` | Description |
