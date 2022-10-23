@@ -1,5 +1,5 @@
 import React from "react";
-import {_web3Instance, _getLocalProvider} from "./web3Context";
+import {_web3Instance, _getLocalProvider} from "./Web3Context";
 import truffleContract from "@truffle/contract";
 import constractABI from "../contracts/MyContract.json";
 
@@ -16,3 +16,4 @@ instance.setNetwork(parseInt(process.env.NETWORK_ID));
 
 export const MyContract = instance;
 export const MyContractContext = React.createContext();
+

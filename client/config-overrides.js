@@ -5,6 +5,7 @@ module.exports = function override(config) {
   Object.assign(fallback, {
     fs: false,
     crypto: require.resolve("crypto-browserify"),
+    ethers: require.resolve("ethers"),
     stream: require.resolve("stream-browserify"),
     assert: require.resolve("assert"),
     http: require.resolve("stream-http"),

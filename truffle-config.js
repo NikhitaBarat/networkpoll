@@ -1,6 +1,7 @@
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+const path = require("path");
 
 module.exports = {
   networks: {
@@ -40,7 +41,7 @@ module.exports = {
       chainId: 80001
     }
   },
-  
+  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   // mocha: {
   //    timeout: 100000
   // },
@@ -48,7 +49,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.15",    
+      version: "0.8.0",    
       // docker: true,   
       settings: {          
        optimizer: {
