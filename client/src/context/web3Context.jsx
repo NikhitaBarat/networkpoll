@@ -13,12 +13,12 @@ const getLocalProvider = () => {
 const getProvider = async () => {
   try {
     // Wait for loading completion to avoid race conditions with web3 injection timing.
-    if (window.ethereum) {
+    if (window.ethereum !== "undefined") {
       let provider = new Web3(window.ethereum);
       // Request account access if needed
       // window.ethereum.enable() is deprecated
       // use ethereum.request api instead
-      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      await window.ethereum.request({ method: "eth_requestAccounts" });
       return provider;
     }
     // Legacy dapp browsers...

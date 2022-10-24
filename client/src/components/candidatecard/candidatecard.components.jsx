@@ -25,7 +25,7 @@ const Candidatecard = () => {
             <div className='parties-box'>
               <div className='box-left'>
                 <img className='plogo' src={pdata.logo} alt="" />
-                <h2 className='pname'>{pdata.name}</h2>
+                <span className='pname'>{pdata.name}</span>
               </div>
               <div className='box-right'>
                 <button>Vote</button>

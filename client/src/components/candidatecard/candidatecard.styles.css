@@ -17,6 +17,9 @@
     display: flex;
 }
 
+.box-left span {
+    padding: 0 1rem;
+}
 .plogo {
     height: 4rem;
 }
