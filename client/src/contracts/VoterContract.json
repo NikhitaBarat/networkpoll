@@ -1,113 +1,71 @@
 {
   "contractName": "VoterContract",
-  "abi": [
-    {
-      "inputs": [],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
-    }
-  ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/VoterContract.sol\":\"VoterContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/VoterContract.sol\":{\"keccak256\":\"0x6e03e23afb80ac2a5e5349b972ca49ca61eb83dfc61bd0ef917bf1287f6e0a7e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c61dfaa7fb7f35b366e2993ba5b78e2d728619786988f43bd7604f763ed2414f\",\"dweb:/ipfs/QmVq3R91BrGB5n5A2Lu1sirv5smNHdNePnR6irgVDRAQaL\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200129270ca37e1886bd9ccd64d4ea26f1f55e393317a0f5ce1faaa8951dd4b13a64736f6c634300080f0033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212200129270ca37e1886bd9ccd64d4ea26f1f55e393317a0f5ce1faaa8951dd4b13a64736f6c634300080f0033",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/VoterContract.sol\":\"VoterContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/VoterContract.sol\":{\"keccak256\":\"0x091dc90d85c8feb0181b97d788889c8b4e2e7c2094f0b6661e778a09309e5188\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bf3b31e222d3ee45c5bf1f1da62aea688af892321549560c03cc9d7406b24a6d\",\"dweb:/ipfs/Qmdr7vVrEqMAYQdqUTMRWscTvLttZeDXEX5E7Uy6x7Wo5Q\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220beaff15ef7e81fa932b4519586c5c698abc6ffacf69f26d34a6331de8d57744364736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220beaff15ef7e81fa932b4519586c5c698abc6ffacf69f26d34a6331de8d57744364736f6c63430008000033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "58:145:1:-:0;;;182:19;;;;;;;;;;58:145;;;;;;",
-  "deployedSourceMap": "58:145:1:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.15;\n\ncontract VoterContract {\n\n  // mapping with voter id and public key\n  // mapping with voteer id and voter's address\n  // \n  constructor() {\n  }\n}\n",
+  "sourceMap": "232:1773:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "232:1773:2:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n// import ERC20Votes\n// import \"@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol\";\n// import \"@openzeppelin/contracts/token/ERC20/extensions/ERC20VotesComp.sol\";\ncontract VoterContract {\n    // mapping with voter id and public key\n    // mapping(address => string) public VoterPubKeyList;\n\n    // // mapping with voteer id and voter's address\n    // mapping(string => address) public linkedVoterId;\n\n    // // transfer coin to voter\n\n    // // transfer coin to candidate\n    // constructor() ERC20Votes() {}\n\n\n    // // ERC20Votes Consists:\n\n    // // checkpoints(account, pos)\n    // // numCheckpoints(account)\n    // // delegates(account)\n\n    // // getVotes(account)\n    // function getCandidateVotes(address candidateAccount) public view {\n    //     // VoterPubKeyList[candidate] = \"0xB...JKLAS87JHKSA8H\";\n    //   require(candidateAccount != address(0), 'Error - Candidate account cannot be zero address');\n    //   getVotes(candidateAccount);        \n    // }\n\n\n    // // getPastVotes(account, blockNumber)\n\n    // // getPastTotalSupply(blockNumber)\n    \n    // // delegate(delegatee)\n    \n    // // delegateBySig(delegatee, nonce, expiry, v, r, s)\n    // function delegateBySignature(address candidate, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) public {\n    //   delegateBySig(candidate, nonce, expiry, v, r, s);\n    // }\n    // // _maxSupply()\n    \n    // // _mint(account, amount)\n    // function mint(address to, uint256 amount) public {\n    //   _mint(to, amount);\n    // }\n\n    // // _burn(account, amount)\n\n\n    // // _afterTokenTransfer(from, to, amount)\n    // function afterTokenTransfer(address _from, address _to, uint256 amount) public {\n    //   require(_to != address(0), 'Error - ERC20 transfer to zero address');\n    //   require(amount != 0, 'Error - ERC20 cannot transfer zero amount');\n    //   _afterTokenTransfer(_from, _to, amount);\n    // }\n    // // _delegate(delegator, delegatee)\n}\n",
   "sourcePath": "D:\\Projects\\networkpoll\\contracts\\VoterContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/VoterContract.sol",
     "exportedSymbols": {
       "VoterContract": [
-        39
+        58
       ]
     },
-    "id": 40,
+    "id": 59,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 34,
+        "id": 57,
         "literals": [
           "solidity",
           "^",
           "0.8",
-          ".15"
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:24:1"
+        "src": "32:23:2"
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "VoterContract",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 39,
+        "id": 58,
         "linearizedBaseContracts": [
-          39
+          58
         ],
         "name": "VoterContract",
-        "nameLocation": "67:13:1",
         "nodeType": "ContractDefinition",
-        "nodes": [
-          {
-            "body": {
-              "id": 37,
-              "nodeType": "Block",
-              "src": "196:5:1",
-              "statements": []
-            },
-            "id": 38,
-            "implemented": true,
-            "kind": "constructor",
-            "modifiers": [],
-            "name": "",
-            "nameLocation": "-1:-1:-1",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 35,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "193:2:1"
-            },
-            "returnParameters": {
-              "id": 36,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "196:0:1"
-            },
-            "scope": 39,
-            "src": "182:19:1",
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
-          }
-        ],
-        "scope": 40,
-        "src": "58:145:1",
-        "usedErrors": []
+        "nodes": [],
+        "scope": 59,
+        "src": "232:1773:2"
       }
     ],
-    "src": "32:172:1"
+    "src": "32:1974:2"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xCB783eff446De418fD2E895C882e64CaB0a6fd29",
-      "transactionHash": "0x4beb717d0e27ee1d048db1cb2a346e30967310e2ec412fdcd48a53929f40d716"
+      "address": "0xe08968A7e216f688D189dD43a1d3105B421FE8f9",
+      "transactionHash": "0x8237f6bcee7a1065f3f79f035fc0499668157ff98d93f4d2a9927371c4602967"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-10-20T16:59:15.246Z",
+  "updatedAt": "2022-10-25T07:26:20.467Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
