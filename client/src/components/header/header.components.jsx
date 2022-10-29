@@ -28,6 +28,12 @@ const Header = () => {
   const initialize = async () => {
     connected = await isMetaMaskConnected();
     installed = isMetaMaskInstalled();
+    if(connected){
+      // do something
+    }
+    if (installed) {
+      // do something
+    }
   }
 
   const isConnected = () => {
