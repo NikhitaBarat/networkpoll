@@ -15,19 +15,19 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 
 | Files/Folders `(Path)` | Description |
 | -------- | -------- |
-| `assets`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `build`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `client`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `contract`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    | 
-| `migrations`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    | 
-| `mobile`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `src`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `test`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `truffle-config.js`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `src/modules`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `client/src`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `client/src/components`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
-| `mobile/components`     | (Edit) _Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,_    |
+| `assets`     | Consist public assets and architecture diagrams    |
+| `build`     | Consist Contracts ABIs for interactions with smart contract.    |
+| `client`     |   Folder consists React framework to build client voting window.  |
+| `contract`     | It consists of Solidity smart contract    | 
+| `migrations`     | Contains Deployment Scripts  | 
+| `mobile`     | Voter/Client-side Mobile device     |
+| `src`     | Application encryptions using Flask framework - python based framework    |
+| `test`     | Contract Testing folder    |
+| `truffle-config.js`     | Truffle configuration file   |
+| `src/modules`     | Contains Encryption algorithms   |
+| `client/src`     | React Code    |
+| `client/src/components`     | React Components   |
+| `mobile/components`     | React Native Components   |
 
 
 ## Endpoints
@@ -35,3 +35,4 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 | Endpoint | Description |
 | -------- | -------- |
 | `/` | Description |
+| `/keys` | Description |
