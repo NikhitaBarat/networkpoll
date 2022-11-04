@@ -30,5 +30,9 @@ const getDatafromIPFS = async ({ contentId }) => {
 }
 
 // IPNS resolve immutable data to mutable data
+const updateIPFSfile = async () => {
+
+}
+
 
 module.exports = { putDatatoIPFS, getDatafromIPFS };

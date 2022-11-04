@@ -20,9 +20,9 @@ abstract contract VoterContract is ERC20Votes {
 
     // ERC20Votes Consists:
 
-    // checkpoints(account, pos)
-    // numCheckpoints(account)
-    // delegates(account)
+    // -> checkpoints(account, pos)
+    // -> numCheckpoints(account)
+    // -> delegates(account)
 
     // getVotes(account)
     function getCandidateVotes(address candidateAccount) public view {
@@ -33,16 +33,26 @@ abstract contract VoterContract is ERC20Votes {
 
 
     // getPastVotes(account, blockNumber)
-
+    function getPastVotersVote(address account, uint256 blockNumber) public view {
+      getPastVotes(account, blockNumber);
+    }
     // getPastTotalSupply(blockNumber)
-    
+    function getTotalPastSupplies(uint256 blockNumber) public view {
+      getPastTotalSupply(blockNumber);
+    }
     // delegate(delegatee)
-    
+    function delegation(address delegatee) public {
+      delegate(delegatee);
+    }
+
     // delegateBySig(delegatee, nonce, expiry, v, r, s)
     function delegateBySignature(address candidate, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) public {
       delegateBySig(candidate, nonce, expiry, v, r, s);
     }
     // _maxSupply()
+    function maxSupplies() public view {
+      _maxSupply();
+    }
     
     // _mint(account, amount)
     function mint(address to, uint256 amount) public {
@@ -58,5 +68,9 @@ abstract contract VoterContract is ERC20Votes {
       require(amount != 0, 'Error - ERC20 cannot transfer zero amount');
       _afterTokenTransfer(_from, _to, amount);
     }
+
     // _delegate(delegator, delegatee)
+    function castVote(address delegator, address delegatee) public {
+      _delegate(delegator, delegatee);
+    }
 }
