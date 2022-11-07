@@ -5,7 +5,7 @@ import './candidatecard.styles.css';
 
 const PartiesData = [
   {
-    name: "BJP",
+    name: "BJP (Bharatya Janta Party)",
     logo: BJP,
   },
   {
@@ -28,7 +28,7 @@ const Candidatecard = () => {
                 <span className='pname'>{pdata.name}</span>
               </div>
               <div className='box-right'>
-                <button>Vote</button>
+                <button className='voting-btn'>Vote</button>
               </div>
             </div>
           ))

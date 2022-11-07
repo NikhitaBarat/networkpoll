@@ -1,0 +1,10 @@
+.sub-header {
+    background: #3590f7;
+    height: 3.5rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}

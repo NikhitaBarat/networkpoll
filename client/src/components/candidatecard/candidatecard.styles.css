@@ -23,3 +23,9 @@
 .plogo {
     height: 4rem;
 }
+
+
+.voting-btn {
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}

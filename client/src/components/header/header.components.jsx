@@ -40,17 +40,26 @@ const Header = () => {
     window.ethereum.on('accoutsChanged', async () => {
       initialize();
     })
+    // after disconnection page reloads
+    window.location.reload();
   }
 
   return (
     <header>
       <div className="left"></div>
       <div className="center">
-        <button onClick={isConnected}>Disconnect</button>
-        {account}
+
       </div>
       <div className="right">
-        <button onClick={connect}>Connect Wallet</button>
+      { 
+          account ? 
+          <div>
+            {account}
+            <button className='wallet-btn' onClick={isConnected}>Disconnect</button>
+          </div> :
+           <button className='wallet-btn' onClick={connect}>Connect Wallet</button>
+
+      }
       </div>
     </header>
   )
