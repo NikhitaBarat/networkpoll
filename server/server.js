@@ -28,7 +28,9 @@ app.get('/secret', isAuthorized, (req, res) => {
 app.get('/jwt', (req, res) => {
     let privateKey = fs.readFileSync('./private.pem', 'utf8');
     let token = jwt.sign({ "body": "stuff" }, privateKey, { algorithm: 'HS256'});
-    res.send(token);
+    res.send({
+        "token": token
+    });
 })
 
 function isAuthorized(req, res, next) {
@@ -56,9 +58,6 @@ function isAuthorized(req, res, next) {
         res.status(500).json({ error: "Not Authorized" });
     }
 }
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
