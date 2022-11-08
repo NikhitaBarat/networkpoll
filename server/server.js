@@ -18,10 +18,9 @@ app.get('/', (req, res) => {
 
 app.get('/secret', isAuthorized, (req, res) => {
     res.json({ 
-        "message" : "THIS IS SUPER SECRET",
+        "message" : "Secret keys",
         "private_key": PrivateKey,
         "public_key": PublicKey 
-        
     })
 })
 

@@ -2,7 +2,7 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 const path = require("path");
-
+const infuraProjectId = "b636c84e1cd24c18b28382e3c25b3058"
 module.exports = {
   networks: {
     development: {
@@ -11,22 +11,22 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
     },
     //polygon Infura mainnet
-    polygon_infura_mainnet: {
-      provider: () => new HDWalletProvider({
-        mnemonic: {
-          phrase: mnemonic
-        },
-        providerOrUrl:
-         "https://polygon-mainnet.infura.io/v3/" + infuraProjectId
-      }),
-      network_id: 137,
-      confirmations: 2,
-      timeoutBlocks: 200,
-      skipDryRun: true,
-      chainId: 137
-    },
+    // polygon_infura_mainnet: {
+    //   provider: () => new HDWalletProvider({
+    //     mnemonic: {
+    //       phrase: mnemonic
+    //     },
+    //     providerOrUrl:
+    //      "https://polygon-mainnet.infura.io/v3/" + infuraProjectId
+    //   }),
+    //   network_id: 137,
+    //   confirmations: 2,
+    //   timeoutBlocks: 200,
+    //   skipDryRun: true,
+    //   chainId: 137
+    // },
     //polygon Infura testnet
-    polygon_infura_testnet: {
+    polygon_mumbai: {
       provider: () => new HDWalletProvider({
         mnemonic: {
           phrase: mnemonic
@@ -49,7 +49,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.0",    
+      version: "0.8.2",    
       // docker: true,   
       settings: {          
        optimizer: {
