@@ -24,3 +24,8 @@ let buf1 = Buffer.from(ss1)
 let buf2 = Buffer.from(ss2)
 
 console.log(buf1.equals(buf2))
+
+module.exports = {
+    buf1, 
+    buf2
+}

@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 5s
+
+scarpe_configs:
+  - job_name: 'networkpoll-api'
+    static_configs:
+      - targets: ['networkpoll-api:4000']
+        labels:
+          service: 'networkpoll-service'
+          group: 'development'

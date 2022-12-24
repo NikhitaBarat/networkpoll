@@ -4,6 +4,7 @@ const cors = require('cors')
 const fs = require('fs')
 const jwt = require('jsonwebtoken')
 const { PrivateKey, PublicKey } = require('./src/keyexchange')
+const router = require('./routes/voter.routes')
 // server configurations
 const PORT = process.env.PORT || 4000
 const app = express()
@@ -57,6 +58,9 @@ function isAuthorized(req, res, next) {
         res.status(500).json({ error: "Not Authorized" });
     }
 }
+
+app.use('/api', router)
+
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
