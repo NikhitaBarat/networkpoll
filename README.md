@@ -48,3 +48,10 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 | -------- | -------- |
 | `/` | Description |
 | `/keys` | Description |
+
+
+```shell
+docker-compose up -d prometheus
+docker-compose up -d grafana
+docker-compose up -d grafana-dashboards
+```

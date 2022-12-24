@@ -2,9 +2,9 @@ global:
   scrape_interval: 5s
 
 scarpe_configs:
-  - job_name: 'networkpoll-api'
+  - job_name: 'application-metrics'
     static_configs:
-      - targets: ['networkpoll-api:4000']
+      - targets: ['networkpoll-server:4000']
         labels:
           service: 'networkpoll-service'
           group: 'development'

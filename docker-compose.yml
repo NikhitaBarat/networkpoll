@@ -2,11 +2,50 @@ version: '3.4'
 
 services:
   networkpoll:
-    image: networkpoll
+    image: networkpoll-server
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: np-node-server
     environment:
-      NODE_ENV: production
+      NODE_ENV: dev
     ports:
       - 4000:4000
+  client:
+    image: networkpoll-client 
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: np-react-client
+    ports:
+      - "5000:5000"
+  prometheus:
+    container_name: prometheus-svc
+    image: prom/prometheus
+    ports:
+      - "9091:9090"
+    command: --config.file=/etc/prometheus/prometheus.yaml
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yaml
+  grafana:
+    image: grafana/grafana:5.0.4
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_AUTH_BASIC_ENABLED=false 
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+  grafana-dashboards:
+    image: alpine:3.10
+    depends_on:
+      - grafana
+    volumes:
+      - ./monitoring:/grafana
+    command: >
+      /bin/sh -c "
+        apk add --no-cache curl
+        echo 'waiting for grafana'
+        sleep 5s
+        cd /grafana
+        curl --request POST http://grafana:3000/api/datasources --header 'Content-Type: application/json' -d @datasources.json
+        curl --request POST http://grafana:3000/api/dashboards/db --header 'Content-Type: application/json' -d @dashboard.json"
