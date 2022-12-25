@@ -6,11 +6,11 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile
-    container_name: np-node-server
+    container_name: nodejs-application
     environment:
       NODE_ENV: dev
     ports:
-      - 4000:4000
+      - 5000:5000
   client:
     image: networkpoll-client 
     build:
@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile
     container_name: np-react-client
     ports:
-      - "5000:5000"
+      - "4000:4000"
   prometheus:
     container_name: prometheus-svc
     image: prom/prometheus

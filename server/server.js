@@ -4,9 +4,10 @@ const cors = require('cors')
 const fs = require('fs')
 const jwt = require('jsonwebtoken')
 const { PrivateKey, PublicKey } = require('./src/keyexchange')
+const Prometheus = require('prom-client')
 const router = require('./routes/voter.routes')
 // server configurations
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 const app = express()
 
 // middleware
@@ -59,6 +60,10 @@ function isAuthorized(req, res, next) {
     }
 }
 
+// const collectDefaultMetrics  = Prometheus.collectDefaultMetrics;
+// collectDefaultMetrics({ timeout: 5000 });
+const register = Prometheus.Registry;
+Prometheus.collectDefaultMetrics({ register })
 app.use('/api', router)
 
 
