@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract EVoting {
+contract EVotingVR3 {
     // The address of the contract owner
     address public owner;
 
