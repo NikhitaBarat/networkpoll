@@ -1,0 +1,14 @@
+
+
+type GenerateKey {
+    publicKey: String
+    privateKey: String
+}
+
+type Query {
+    getKeys: GenerateKey!
+}
+
+type Mutation {
+    createKeys(): GenerateKey!
+}
