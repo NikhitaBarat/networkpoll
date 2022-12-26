@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract EVoting {
+contract EVotingVR2 {
     // Struct to represent an election
     struct Election {
         uint id;
