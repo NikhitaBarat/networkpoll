@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Election {
+contract EVoting {
   // Struct to hold information about a voter
   struct Voter {
     address addr; // Ethereum address of the voter
