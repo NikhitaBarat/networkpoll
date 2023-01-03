@@ -3,12 +3,14 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 const path = require("path");
 const infuraProjectId = "b636c84e1cd24c18b28382e3c25b3058"
+
 module.exports = {
   networks: {
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
+     from: '0x92c1cfb7806Ad2916b85f1803F813328b2D26501',
     },
     //polygon Infura mainnet
     polygon_infura_mainnet: {

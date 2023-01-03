@@ -12,8 +12,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -39,8 +38,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ipfsHash\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IpfsFileStorage.sol\":\"IpfsFileStorage\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IpfsFileStorage.sol\":{\"keccak256\":\"0xf3b18448fa47984ec0fac9329a3a312392ba72c946a5a843b0bd46173c81d691\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e53f002fd348ab6b388e2a77282ce80e1daebb30fe54b1d0f53b542791c2437\",\"dweb:/ipfs/Qmc62VSEqAznJBNXtw2DQTWz9xg5ni1bEFabSsvQksAJAc\"]}},\"version\":1}",
@@ -915,7 +913,7 @@
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-12-26T20:52:18.995Z",
+  "updatedAt": "2022-12-27T13:16:20.590Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

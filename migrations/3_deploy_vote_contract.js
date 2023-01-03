@@ -1,5 +1,7 @@
 const EVotingVR2 = artifacts.require('EVotingVR2');
 
 module.exports = function (deployer) {
-    deployer.deploy(EVotingVR2);
+    for(let i = 0; i < 10; i++){
+        deployer.deploy(EVotingVR2);
+    }
 }
