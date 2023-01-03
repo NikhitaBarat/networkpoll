@@ -1,6 +1,7 @@
 {
   "name": "ipfs",
   "version": "1.0.0",
+  "description": "",
   "main": "main.js",
   "type": "module",
   "scripts": {
@@ -16,7 +17,7 @@
     "ipfs-core": "^0.17.0",
     "ipfs-http-client": "^59.0.0",
     "nodemon": "^2.0.20",
-    "web3.storage": "^4.4.0"
-  },
-  "description": ""
+    "minimist": "^1.2.5",
+    "web3.storage": "^3.1.0"
+  }
 }
