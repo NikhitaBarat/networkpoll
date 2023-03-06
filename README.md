@@ -42,6 +42,39 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 | `mobile/components`     | React Native Components   |
 
 
+## Application Setup
+
+- Fork the repository [siddhantprateek/networkpoll](https://github.com/siddhantprateek/networkpoll)
+
+- ```shell
+    git clone https://github.com/<username>/networkpoll
+    cd petrovedge
+    ```
+
+### Setting up Python-dev environment
+
+- Install Python3 and above [python.org](https://www.python.org/)
+
+- ```javascript
+    cd services
+    mkdir <service-name>
+    python -m venv .venv
+    source .venv/Scripts/activate
+    ```
+
+### Setting up Nodejs-dev environment
+
+
+- Install [NodeJs](https://nodejs.org/en/)
+
+- ```javascript
+    cd services
+    mkdir <service-name>; cd <service-name>
+    npm init -y
+    ```
+
+
+
 ## Endpoints
 
 | Endpoint | Description |
