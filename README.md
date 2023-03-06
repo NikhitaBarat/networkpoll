@@ -37,7 +37,7 @@ Networkpoll is a decentralised, blockchain-based, end-to-end secure, anonymous, 
 | `test`     | Contract Testing folder    |
 | `truffle-config.js`     | Truffle configuration file   |
 | `src/modules`     | Contains Encryption algorithms   |
-| `client/src`     | React Code    |
+| `client/src`     | React Source Code    |
 | `client/src/components`     | React Components   |
 | `mobile/components`     | React Native Components   |
 
@@ -73,7 +73,21 @@ Networkpoll is a decentralised, blockchain-based, end-to-end secure, anonymous, 
     npm init -y
     ```
 
+## Project Report 
 
+
+- ✅ Connected to Layer 2 Blockchain Network (Polygon)
+- ✅ Elliptical Curve Deffie-Hellman Key Generation Integration
+- ✅ Quantum Key Generation Algorithm Integration 
+- ❌ Create Mobile Client
+- ❌ Web Browser based client
+- ✅ Contract deployed over polygon Network
+- ✅ Contract Tested over network 
+- ✅ Test Mutliple transactions processing for Smart Contract
+- ✅ Python server response rate analytics
+- ✅ NodeJs server response rate analytics 
+- ✅ Interaction with Smart Contract
+- ✅ Integration IPFS and Blockchain storage (OrbitDB)
 
 ## Endpoints
 
