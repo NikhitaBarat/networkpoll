@@ -8,3 +8,5 @@ const createToken = (id) => {
         expiresIn: maxAge
     })
 }
+
+module.exports = createToken;

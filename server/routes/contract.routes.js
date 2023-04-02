@@ -1,9 +1,9 @@
 const express = require('express');
 const ContractRouter = express.Router();
-const ContractABI = require('../../build/contracts/VoterContract.json')
 const { PrivateKey, PublicKey } = require('../src/keyexchange');
 
-ContractRouter.get('/abi', (req, res) => {
+ContractRouter.get('/v1/abi', async (req, res) => {
+    let ContractABI = await require('../../build/contracts/VoterContract.json')
     res.status(200).send(ContractABI)
 })
 

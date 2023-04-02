@@ -7,6 +7,8 @@ const { PrivateKey, PublicKey } = require('./src/keyexchange')
 const Prometheus = require('prom-client')
 const router = require('./routes/voter.routes')
 const ContractRouter = require('./routes/contract.routes');
+const { HttpStatusCode } = require('axios')
+
 // server configurations
 const PORT = process.env.PORT || 5000
 const app = express()
@@ -16,11 +18,15 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.send('Server running perfectly')
+    res.status(200).json({
+        "status": HttpStatusCode.Ok,
+        "message":'Server running perfectly'
+    })
 })
 
 app.get('/secret', isAuthorized, (req, res) => {
     res.json({ 
+        "status": HttpStatusCode.Ok,
         "message" : "Secret keys",
         "private_key": PrivateKey,
         "public_key": PublicKey 
@@ -64,12 +70,16 @@ function isAuthorized(req, res, next) {
 // const collectDefaultMetrics  = Prometheus.collectDefaultMetrics;
 // collectDefaultMetrics({ timeout: 5000 });
 const register = Prometheus.Registry;
+
 // Prometheus.collectDefaultMetrics({ register })
 app.use('/api', router)
 
 // contractRoute
-app.use('/contract', ContractRouter)
+app.use('/v1/contract', ContractRouter)
+
+// api: v2
+app.use('/v2', require('./routes/version/contract.v2.routes'))
 
 app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`)
+    console.log(`Server is running at http://localhost:${PORT} 🚀`)
 })
