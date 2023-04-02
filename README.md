@@ -1,13 +1,13 @@
 
 <div align="center">
-
-<h1>NetworkPoll</h1>
-
+    <h1>NetworkPoll</h1>
 </div>
 
-NetworkPoll is Ethereum network based E2E secure voting system using Cloud and Blockchain to maintain voter confidentiality.
+Networkpoll is a decentralised, blockchain-based, end-to-end secure, anonymous, anti-quantum, and tamper-resistant electronic voting system. To protect itself against quantum attacks, our application employs quantum cryptography. For automating the execution, our programme makes use of Solidity smart contracts as well as several additional libraries. Through the Polygon network, which utilizes a modified proof-of-stake consensus process, our application contracts are distributed. We offer a number of security features that make it difficult for a third party to access the voting data.
 
-![](/assets/architecture/NEPOLL_ARCH.png)
+![1_labeledARCHITECTURE](https://user-images.githubusercontent.com/43869046/223144926-5d40fa7c-56ed-4937-9902-3c1f7d954853.png)
+<!-- 
+![](/assets/architecture/NEPOLL_ARCH.png) -->
 
 ## Tech Stack
 ![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
@@ -37,10 +37,57 @@ NetworkPoll is Ethereum network based E2E secure voting system using Cloud and B
 | `test`     | Contract Testing folder    |
 | `truffle-config.js`     | Truffle configuration file   |
 | `src/modules`     | Contains Encryption algorithms   |
-| `client/src`     | React Code    |
+| `client/src`     | React Source Code    |
 | `client/src/components`     | React Components   |
 | `mobile/components`     | React Native Components   |
 
+
+## Application Setup
+
+- Fork the repository [siddhantprateek/networkpoll](https://github.com/siddhantprateek/networkpoll)
+
+- ```shell
+    git clone https://github.com/<username>/networkpoll
+    cd networkpoll
+    ```
+
+### Setting up Python-dev environment
+
+- Install Python3 and above [python.org](https://www.python.org/)
+
+- ```javascript
+    cd services
+    mkdir <service-name>
+    python -m venv .venv
+    source .venv/Scripts/activate
+    ```
+
+### Setting up Nodejs-dev environment
+
+
+- Install [NodeJs](https://nodejs.org/en/)
+
+- ```javascript
+    cd services
+    mkdir <service-name>; cd <service-name>
+    npm init -y
+    ```
+
+## Project Report 
+
+
+- ✅ Connected to Layer 2 Blockchain Network (Polygon)
+- ✅ Elliptical Curve Deffie-Hellman Key Generation Integration
+- ✅ Quantum Key Generation Algorithm Integration 
+- ❌ Create Mobile Client
+- ❌ Web Browser based client
+- ✅ Contract deployed over polygon Network
+- ✅ Contract Tested over network 
+- ✅ Test Mutliple transactions processing for Smart Contract
+- ✅ Python server response rate analytics
+- ✅ NodeJs server response rate analytics 
+- ✅ Interaction with Smart Contract
+- ✅ Integration IPFS and Blockchain storage (OrbitDB)
 
 ## Endpoints
 
