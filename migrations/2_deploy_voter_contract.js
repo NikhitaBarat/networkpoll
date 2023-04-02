@@ -6,7 +6,5 @@ const IPFSFileStorage = artifacts.require("IpfsFileStorage");
 
 
 module.exports = function (deployer) {
-    // deployer.deploy(VoterERC);
-    // deployer.deploy(VotingGovernor);
-    // deployer.deploy(IPFSFileStorage);
+    deployer.deploy(IPFSFileStorage);
 }
